@@ -1,0 +1,10 @@
+<p>list-users works!</p>
+
+<app-filter-users [varDoPelps]="cName" [tax]="taxVal" (updatedList)="captureUsers($event)"></app-filter-users>
+
+
+<h3>Data Received from Child</h3>
+{{user | json}}
+
+<h3>Data Received from Service</h3>
+{{ listUsers | json }}
